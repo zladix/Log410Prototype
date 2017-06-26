@@ -1,0 +1,14 @@
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\bin\Debug\Log410Proto.exe.config
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\Log410Proto.csprojResolveAssemblyReference.cache
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\MainWindow.g.cs
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\App.g.cs
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\Log410Proto_MarkupCompile.cache
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\Log410Proto_MarkupCompile.lref
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\bin\Debug\Log410Proto.exe
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\bin\Debug\Log410Proto.pdb
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\MainWindow.baml
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\Log410Proto.g.resources
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\Log410Proto.Properties.Resources.resources
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\Log410Proto.csproj.GenerateResource.Cache
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\Log410Proto.exe
+c:\users\utilisateur\documents\visual studio 2015\Projects\Log410Proto\Log410Proto\obj\Debug\Log410Proto.pdb
