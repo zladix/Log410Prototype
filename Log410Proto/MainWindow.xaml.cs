@@ -34,5 +34,11 @@ namespace Log410Proto
         {
 
         }
+
+        private void createObjButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window createObjWindow = new ObjectCreation();
+            createObjWindow.Show();
+        }
     }
 }
