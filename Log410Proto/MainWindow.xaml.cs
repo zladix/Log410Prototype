@@ -40,5 +40,20 @@ namespace Log410Proto
             Window createObjWindow = new ObjectCreation();
             createObjWindow.Show();
         }
+
+        private void checkBox_Static_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void checkBox_Dynamic_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void checkBox_WorldMap_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
