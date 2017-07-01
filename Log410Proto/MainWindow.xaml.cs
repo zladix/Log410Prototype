@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,8 @@ namespace Log410Proto
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ObservableCollection<string> _items;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -43,10 +46,19 @@ namespace Log410Proto
 
         private void checkBox_Static_Checked(object sender, RoutedEventArgs e)
         {
+            ChangeStaticElementState(true);
+        }
 
+        private void checkBox_Static_Unchecked(object sender, RoutedEventArgs e)
+        {
+            ChangeStaticElementState(false);
         }
 
         private void checkBox_Dynamic_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void checkBox_Dynamic_Unchecked(object sender, RoutedEventArgs e)
         {
 
         }
@@ -55,5 +67,21 @@ namespace Log410Proto
         {
 
         }
+        private void checkBox_WorldMap_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ChangeStaticElementState(bool activated)
+        {
+            this.staticItemCan3.IsEnabled = activated;
+        }
+
+        private void ChangeDynamicElementState(bool activated)
+        {
+
+        }
+
+       
     }
 }
