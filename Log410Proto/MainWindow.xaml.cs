@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace Log410Proto
 {
@@ -22,10 +23,49 @@ namespace Log410Proto
     public partial class MainWindow : Window
     {
         private ObservableCollection<string> _items;
-
         public MainWindow()
         {
             InitializeComponent();
+            Application.Current.MainWindow = this;
+
+        }
+
+
+        public void addObject(Boolean isStatic, String objName)
+        {
+            /*
+            Rectangle r = new Rectangle();
+            r.Height = 100;
+            r.Width = 200;
+            if (isStatic)
+            {
+                SolidColorBrush redBrush = new SolidColorBrush();
+                redBrush.Color = Colors.Blue;
+                r.Fill = redBrush;
+            }
+            else
+            {
+                SolidColorBrush yellowBrush = new SolidColorBrush();
+                yellowBrush.Color = Colors.Yellow;
+                r.Fill = yellowBrush;
+            }
+            Grid.SetColumn(r, 2);
+            Trace.WriteLine(r.Height);
+            */
+            if (isStatic)
+            {
+                this.createRectangle.Visibility = Visibility.Visible;
+                this.redCreate.Visibility = Visibility.Hidden;
+                this.chairLabel.Visibility = Visibility.Visible;
+                this.chairLabel.Content = objName;
+            }
+            else
+            {
+                this.redCreate.Visibility = Visibility.Visible;
+                this.createRectangle.Visibility = Visibility.Hidden;
+                this.chairLabel.Visibility = Visibility.Visible;
+                this.chairLabel.Content = objName;
+            }
         }
 
         private void radioButton1_Checked(object sender, RoutedEventArgs e)
@@ -40,7 +80,7 @@ namespace Log410Proto
 
         private void createObjButton_Click(object sender, RoutedEventArgs e)
         {
-            Window createObjWindow = new ObjectCreation();
+            Window createObjWindow = new ObjectCreation(this);
             createObjWindow.Show();
         }
 
@@ -74,7 +114,7 @@ namespace Log410Proto
 
         private void ChangeStaticElementState(bool activated)
         {
-            this.staticItemCan3.IsEnabled = activated;
+            //this.staticItemCan3.IsEnabled = activated;
         }
 
         private void ChangeDynamicElementState(bool activated)
@@ -82,6 +122,6 @@ namespace Log410Proto
 
         }
 
-       
+
     }
 }
