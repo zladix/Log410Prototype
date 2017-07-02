@@ -48,9 +48,11 @@
         <Ellipse Fill="#FFFFF300" HorizontalAlignment="Left" Height="15" Margin="465,146,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" x:Name="staticItemCan3"/>
         <Rectangle Fill="#FFFFF300" HorizontalAlignment="Left" Height="28" Margin="285,57,0,0" Stroke="Black" VerticalAlignment="Top" Width="75"/>
         <Ellipse Fill="#FFFFF300" HorizontalAlignment="Left" Height="20" Margin="135,141,0,0" Stroke="Black" VerticalAlignment="Top" Width="20"/>
-        <Ellipse Fill="Red" HorizontalAlignment="Left" Height="69" Margin="421,235,0,0" Stroke="Black" VerticalAlignment="Top" Width="69"/>
+        <Ellipse x:Name="roundThing" Fill="Red" HorizontalAlignment="Left" Height="69" Margin="421,235,0,0" Stroke="Black" VerticalAlignment="Top" Width="69" MouseDown="roundThing_MouseDown"/>
+        <Ellipse x:Name="yellowRoundThing" Fill="Yellow" HorizontalAlignment="Left" Height="69" Margin="421,235,0,0" Stroke="Black" VerticalAlignment="Top" Width="69" MouseDown="roundThing_MouseDown" Visibility="Hidden"/>
         <Rectangle x:Name="redCreate" Fill="Red" HorizontalAlignment="Left" Height="40" Margin="125,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40" Visibility="Hidden"/>
         <Label x:Name="chairLabel" Content="Label" HorizontalAlignment="Left" Margin="125,217,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label x:Name="roundShitLabel" Content="Table" HorizontalAlignment="Left" Margin="436,258,0,0" VerticalAlignment="Top" Panel.ZIndex="1"/>
 
 
     </Grid>

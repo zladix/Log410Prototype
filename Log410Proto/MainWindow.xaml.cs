@@ -23,6 +23,8 @@ namespace Log410Proto
     public partial class MainWindow : Window
     {
         private ObservableCollection<string> _items;
+        SolidColorBrush yellow = new SolidColorBrush(Colors.Yellow);
+        SolidColorBrush red = new SolidColorBrush(Colors.Red);
         public MainWindow()
         {
             InitializeComponent();
@@ -122,6 +124,33 @@ namespace Log410Proto
 
         }
 
+        private void roundThing_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Window modifDelObjWindow = new ModifDelete(this);
+            modifDelObjWindow.Show();
+        }
 
+        public void deleteRoundShit()
+        {
+            roundThing.Visibility = Visibility.Hidden;
+            roundShitLabel.Visibility = Visibility.Hidden;
+
+        }
+
+        public void modifRoundshit(String newName, Boolean isStatic)
+        {
+            if (isStatic)
+            {
+                this.roundThing.Fill = this.yellow;
+                //this.yellowRoundThing.Visibility = Visibility.Visible;
+                //this.roundThing.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                this.roundThing.Fill = this.red;
+            }
+            this.roundShitLabel.Content = newName;
+            this.roundShitLabel.Visibility = Visibility.Visible;
+        }
     }
 }
