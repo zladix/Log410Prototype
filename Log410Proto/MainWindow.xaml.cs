@@ -130,14 +130,13 @@ namespace Log410Proto
         private void ChangeStaticElementState(bool activated)
         {
             view2d.ChangeStaticItemVisibility(activated);
-            //3d too
-            //this.staticItemCan3.IsEnabled = activated;
+            view3d.ChangeStaticItemVisibility(activated);
         }
 
         private void ChangeDynamicElementState(bool activated)
         {
             view2d.ChangeDynamicItemVisibility(activated);
-            //3d too
+            view3d.ChangeDynamicItemVisibility(activated);
         }
 
         public void deleteRoundShit()

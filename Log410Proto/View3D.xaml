@@ -8,14 +8,14 @@
              d:DesignHeight="329" d:DesignWidth="526">
     <Grid>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="329" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="526"/>
-        <Rectangle Fill="red" HorizontalAlignment="Left" Height="43" Margin="95,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="111"/>
-        <Rectangle Fill="Yellow" HorizontalAlignment="Left" Height="24" Margin="133,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
-        <Rectangle Fill="Yellow" HorizontalAlignment="Left" Height="24" Margin="55,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
-        <Rectangle Fill="Yellow" HorizontalAlignment="Left" Height="24" Margin="206,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
-        <Rectangle Fill="red" HorizontalAlignment="Left" Height="43" Margin="424,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="82"/>
-        <Rectangle Fill="red" HorizontalAlignment="Left" Height="43" Margin="293,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="117"/>
-        <Rectangle Fill="Yellow" HorizontalAlignment="Left" Height="24" Margin="359,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
-        <Rectangle Fill="Yellow" HorizontalAlignment="Left" Height="24" Margin="307,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
+        <Rectangle Fill="red" Tag="static"  HorizontalAlignment="Left" Height="43" Margin="95,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="111"/>
+        <Rectangle Fill="Yellow" Tag ="dynamic" HorizontalAlignment="Left" Height="24" Margin="133,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
+        <Rectangle Fill="Yellow" Tag ="dynamic" HorizontalAlignment="Left" Height="24" Margin="55,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
+        <Rectangle Fill="Yellow" Tag="dynamic"  HorizontalAlignment="Left" Height="24" Margin="206,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
+        <Rectangle Fill="red" Tag="static" HorizontalAlignment="Left" Height="43" Margin="424,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="82"/>
+        <Rectangle Fill="red" Tag="static" HorizontalAlignment="Left" Height="43" Margin="293,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="117"/>
+        <Rectangle Fill="Yellow" Tag="dynamic" HorizontalAlignment="Left" Height="24" Margin="359,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
+        <Rectangle Fill="Yellow" Tag="dynamic" HorizontalAlignment="Left" Height="24" Margin="307,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
 
     </Grid>
 </UserControl>
