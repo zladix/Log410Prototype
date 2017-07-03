@@ -46,3 +46,10 @@ C:\Users\Admin\Documents\Ecole\ETS\LOG410\Log410Proto\obj\Debug\Log410Proto.Prop
 C:\Users\Admin\Documents\Ecole\ETS\LOG410\Log410Proto\obj\Debug\Log410Proto.csproj.GenerateResource.Cache
 C:\Users\galla\Desktop\Log410Prototype\Log410Proto\obj\Debug\ModifDelete.g.cs
 C:\Users\galla\Desktop\Log410Prototype\Log410Proto\obj\Debug\ModifDelete.baml
+C:\Users\Admin\Documents\Ecole\ETS\LOG410\Log410Proto\obj\Debug\ModifDelete.g.cs
+C:\Users\Admin\Documents\Ecole\ETS\LOG410\Log410Proto\obj\Debug\View.g.cs
+C:\Users\Admin\Documents\Ecole\ETS\LOG410\Log410Proto\obj\Debug\View3D.g.cs
+C:\Users\Admin\Documents\Ecole\ETS\LOG410\Log410Proto\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\Documents\Ecole\ETS\LOG410\Log410Proto\obj\Debug\ModifDelete.baml
+C:\Users\Admin\Documents\Ecole\ETS\LOG410\Log410Proto\obj\Debug\View.baml
+C:\Users\Admin\Documents\Ecole\ETS\LOG410\Log410Proto\obj\Debug\View3D.baml

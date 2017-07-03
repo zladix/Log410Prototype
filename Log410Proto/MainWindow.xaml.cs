@@ -111,11 +111,11 @@ namespace Log410Proto
 
         private void checkBox_Dynamic_Checked(object sender, RoutedEventArgs e)
         {
-
+            ChangeDynamicElementState(true);
         }
         private void checkBox_Dynamic_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            ChangeDynamicElementState(false);
         }
 
         private void checkBox_WorldMap_Checked(object sender, RoutedEventArgs e)
@@ -129,12 +129,15 @@ namespace Log410Proto
 
         private void ChangeStaticElementState(bool activated)
         {
+            view2d.ChangeStaticItemVisibility(activated);
+            //3d too
             //this.staticItemCan3.IsEnabled = activated;
         }
 
         private void ChangeDynamicElementState(bool activated)
         {
-
+            view2d.ChangeDynamicItemVisibility(activated);
+            //3d too
         }
 
         public void deleteRoundShit()
