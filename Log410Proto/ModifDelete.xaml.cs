@@ -25,7 +25,7 @@ namespace Log410Proto
         {
             InitializeComponent();
             this.parent = parent;
-            this.objNameInput.Text = (String)this.parent.roundShitLabel.Content;
+            this.objNameInput.Text = (String)this.parent.view2d.roundShitLabel.Content;
         }
 
         private void deleteButton_Click(object sender, RoutedEventArgs e)
