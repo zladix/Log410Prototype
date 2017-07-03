@@ -25,11 +25,14 @@ namespace Log410Proto
         private ObservableCollection<string> _items;
         SolidColorBrush yellow = new SolidColorBrush(Colors.Yellow);
         SolidColorBrush red = new SolidColorBrush(Colors.Red);
+
         public MainWindow()
         {
             InitializeComponent();
             Application.Current.MainWindow = this;
-
+            this.view2d.Visibility = Visibility.Visible;
+            this.view2d.mainWindow = this;
+            this.view3d.Visibility = Visibility.Hidden;
         }
 
 
@@ -56,28 +59,38 @@ namespace Log410Proto
             */
             if (isStatic)
             {
-                this.createRectangle.Visibility = Visibility.Visible;
-                this.redCreate.Visibility = Visibility.Hidden;
-                this.chairLabel.Visibility = Visibility.Visible;
-                this.chairLabel.Content = objName;
+                this.view2d.createRectangle.Visibility = Visibility.Visible;
+                this.view2d.redCreate.Visibility = Visibility.Hidden;
+                this.view2d.chairLabel.Visibility = Visibility.Visible;
+                this.view2d.chairLabel.Content = objName;
             }
             else
             {
-                this.redCreate.Visibility = Visibility.Visible;
-                this.createRectangle.Visibility = Visibility.Hidden;
-                this.chairLabel.Visibility = Visibility.Visible;
-                this.chairLabel.Content = objName;
+                this.view2d.redCreate.Visibility = Visibility.Visible;
+                this.view2d.createRectangle.Visibility = Visibility.Hidden;
+                this.view2d.chairLabel.Visibility = Visibility.Visible;
+                this.view2d.chairLabel.Content = objName;
             }
         }
 
         private void radioButton1_Checked(object sender, RoutedEventArgs e)
         {
-
+            if (this.view2d == null || this.view3d == null)
+            {
+                return;
+            }
+            this.view2d.Visibility = Visibility.Hidden;
+            this.view3d.Visibility = Visibility.Visible;
         }
 
         private void radioButton_Checked(object sender, RoutedEventArgs e)
         {
-
+            if (this.view2d == null || this.view3d == null)
+            {
+                return;
+            }
+            this.view2d.Visibility = Visibility.Visible;
+            this.view3d.Visibility = Visibility.Hidden;
         }
 
         private void createObjButton_Click(object sender, RoutedEventArgs e)
@@ -124,16 +137,10 @@ namespace Log410Proto
 
         }
 
-        private void roundThing_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Window modifDelObjWindow = new ModifDelete(this);
-            modifDelObjWindow.Show();
-        }
-
         public void deleteRoundShit()
         {
-            roundThing.Visibility = Visibility.Hidden;
-            roundShitLabel.Visibility = Visibility.Hidden;
+            this.view2d.roundThing.Visibility = Visibility.Hidden;
+            this.view2d.roundShitLabel.Visibility = Visibility.Hidden;
 
         }
 
@@ -141,16 +148,16 @@ namespace Log410Proto
         {
             if (isStatic)
             {
-                this.roundThing.Fill = this.yellow;
+                this.view2d.roundThing.Fill = this.yellow;
                 //this.yellowRoundThing.Visibility = Visibility.Visible;
                 //this.roundThing.Visibility = Visibility.Hidden;
             }
             else
             {
-                this.roundThing.Fill = this.red;
+                this.view2d.roundThing.Fill = this.red;
             }
-            this.roundShitLabel.Content = newName;
-            this.roundShitLabel.Visibility = Visibility.Visible;
+            this.view2d.roundShitLabel.Content = newName;
+            this.view2d.roundShitLabel.Visibility = Visibility.Visible;
         }
     }
 }
