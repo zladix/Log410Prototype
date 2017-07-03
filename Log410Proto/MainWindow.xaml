@@ -23,7 +23,13 @@
         <CheckBox x:Name="checkBox_Static" Content="Statique" HorizontalAlignment="Left" Margin="541,102,0,0" VerticalAlignment="Top" Height="16" Width="103" Checked="checkBox_Static_Checked" IsChecked="True" Unchecked="checkBox_Static_Unchecked"/>
         <CheckBox x:Name="checkBox_Dynamic" Content="Dynamique" HorizontalAlignment="Left" Margin="541,124,0,0" VerticalAlignment="Top" Height="16" Width="103" Checked="checkBox_Dynamic_Checked" IsChecked="True" Unchecked="checkBox_Dynamic_Unchecked"/>
         <CheckBox x:Name="checkBox_WorldMap" Content="World Map" HorizontalAlignment="Left" Margin="541,145,0,0" VerticalAlignment="Top" Height="16" Width="103" Checked="checkBox_WorldMap_Checked" IsChecked="True" Unchecked="checkBox_WorldMap_Unchecked"/>
-        <Button x:Name="createObjButton" Content="Create Object" HorizontalAlignment="Left" Margin="531,329,0,0" VerticalAlignment="Top" Width="86" Click="createObjButton_Click"/>
+        <Button x:Name="createObjButton" Content="Créer Objet" HorizontalAlignment="Left" Margin="541,329,0,0" VerticalAlignment="Top" Width="99" Click="createObjButton_Click"/>
         <Label x:Name="label" Content="Afficher les objets" HorizontalAlignment="Left" Margin="531,60,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold" Height="25"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="531,180,0,0" Stroke="Black" VerticalAlignment="Top" Width="113"/>
+        <Label x:Name="label1" Content="Légende" HorizontalAlignment="Left" Margin="562,180,0,0" VerticalAlignment="Top"/>
+        <Rectangle Fill="Red" HorizontalAlignment="Left" Height="18" Margin="541,206,0,0" Stroke="Black" VerticalAlignment="Top" Width="24"/>
+        <Rectangle Fill="#FFFFF300" HorizontalAlignment="Left" Height="18" Margin="541,247,0,0" Stroke="Black" VerticalAlignment="Top" Width="24"/>
+        <Label x:Name="label2" Content="Statique" HorizontalAlignment="Left" Margin="570,206,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy" Content="Dynamique" HorizontalAlignment="Left" Margin="570,247,0,0" VerticalAlignment="Top" Height="25"/>
     </Grid>
 </Window>

@@ -16,6 +16,6 @@
         <Rectangle Fill="red" HorizontalAlignment="Left" Height="43" Margin="293,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="117"/>
         <Rectangle Fill="Yellow" HorizontalAlignment="Left" Height="24" Margin="359,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
         <Rectangle Fill="Yellow" HorizontalAlignment="Left" Height="24" Margin="307,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="40"/>
-        
+
     </Grid>
 </UserControl>
